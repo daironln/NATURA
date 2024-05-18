@@ -399,5 +399,24 @@ namespace Questions
                 }}
             
         };
+
+        public (string, int) getQuestion(int escen, int probl)
+        {
+            var r = Random.Range(0, 2);
+            return (questions[escen][probl][r], r);
+        }
+        public string getBadAnswer(int escen, int probl, int ans)
+        {
+            var r = Random.Range(0, 2);
+            var c = (ans * 3) + r;
+            return badAnswers[escen][probl][c];
+        }
+        
+        public string getCorrectAnswer(int escen, int probl, int ans)
+        {
+            var r = Random.Range(0, 2);
+            var c = (ans * 3) + r;
+            return correctAnswers[escen][probl][c];
+        }
     }
 }
