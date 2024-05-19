@@ -1,0 +1,23 @@
+Texto encendido:
+R: 161
+G: 252
+B: 131
+HEX: #A1FC83
+
+Texto apagado:
+R: 42
+G: 107
+B: 32
+HEX: #2A6B20
+
+Texto incorrecto (rojo):
+R: 132
+G: 24
+B: 24
+HEX: #841818
+
+Preguntas (blanco)
+R: 255
+G: 255
+B: 255
+HEX: #FFFFFF
