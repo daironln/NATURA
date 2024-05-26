@@ -131,6 +131,7 @@ GameObject:
   m_Component:
   - component: {fileID: 39591006}
   - component: {fileID: 39591007}
+  - component: {fileID: 39591008}
   m_Layer: 0
   m_Name: Select
   m_TagString: Fabrica
@@ -178,6 +179,28 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 12.898354, y: 16.423603}
   m_EdgeRadius: 0
+--- !u!114 &39591008
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 39591005}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f6cd6176dc17b14496f1a40ea9ff67a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  question: {fileID: 1740645371}
+  ans:
+  - {fileID: 43546861}
+  - {fileID: 1346115331}
+  - {fileID: 1214676012}
+  pannel: {fileID: 1558523746}
+  quizMenu: {fileID: 1411730041}
+  scenne: 0
+  problem: 1
+  correctIndex: 0
 --- !u!1 &43546859
 GameObject:
   m_ObjectHideFlags: 0
@@ -261,12 +284,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 137.35
+  m_fontSize: 106.15
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 7.3
-  m_fontSizeMax: 143.6
+  m_fontSizeMax: 106.15
   m_fontStyle: 1
   m_HorizontalAlignment: 8
   m_VerticalAlignment: 512
@@ -406,7 +429,7 @@ GameObject:
   - component: {fileID: 470363297}
   m_Layer: 5
   m_Name: Res 2
-  m_TagString: Untagged
+  m_TagString: 2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -449,11 +472,11 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 0
+  m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 0.39215687}
+    m_HighlightedColor: {r: 0.7924528, g: 0.75133497, b: 0.75133497, a: 0.45490196}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5372549}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -469,11 +492,22 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 0
+  m_Interactable: 1
   m_TargetGraphic: {fileID: 470363298}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 968567403}
+        m_MethodName: Ans
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &470363298
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -784,6 +818,7 @@ GameObject:
   m_Component:
   - component: {fileID: 968567402}
   - component: {fileID: 968567401}
+  - component: {fileID: 968567403}
   m_Layer: 0
   m_Name: QuestSystem
   m_TagString: Untagged
@@ -817,6 +852,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &968567403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 968567400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0438806f314c9f4ba25a1265d8fcfb4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text:
+  - {fileID: 43546861}
+  - {fileID: 1346115331}
+  - {fileID: 1214676012}
+  sel: {fileID: 39591008}
 --- !u!1 &1031216951
 GameObject:
   m_ObjectHideFlags: 0
@@ -913,7 +965,7 @@ GameObject:
   - component: {fileID: 1062224992}
   m_Layer: 5
   m_Name: Res 1
-  m_TagString: Untagged
+  m_TagString: 1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -956,11 +1008,11 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 0
+  m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 0.39215687}
+    m_HighlightedColor: {r: 0.7924528, g: 0.75133497, b: 0.75133497, a: 0.45490196}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5372549}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -976,11 +1028,22 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 0
+  m_Interactable: 1
   m_TargetGraphic: {fileID: 1062224993}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 968567403}
+        m_MethodName: Ans
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1062224993
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1032,7 +1095,7 @@ GameObject:
   - component: {fileID: 1203630318}
   m_Layer: 5
   m_Name: Res 3
-  m_TagString: Untagged
+  m_TagString: 3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1075,11 +1138,11 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 0
+  m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 0.39215687}
+    m_HighlightedColor: {r: 0.7924528, g: 0.75133497, b: 0.75133497, a: 0.45490196}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5372549}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -1095,11 +1158,22 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 0
+  m_Interactable: 1
   m_TargetGraphic: {fileID: 1203630319}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 968567403}
+        m_MethodName: Ans
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1203630319
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1220,12 +1294,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 104.1
+  m_fontSize: 90.7
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 7.3
-  m_fontSizeMax: 143.6
+  m_fontSizeMax: 90.7
   m_fontStyle: 1
   m_HorizontalAlignment: 8
   m_VerticalAlignment: 512
@@ -1280,6 +1354,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1215124430}
   - component: {fileID: 1215124431}
+  - component: {fileID: 1215124432}
   m_Layer: 0
   m_Name: Select
   m_TagString: Basura
@@ -1327,6 +1402,28 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 12.76, y: 18.69}
   m_EdgeRadius: 0
+--- !u!114 &1215124432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1215124429}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f6cd6176dc17b14496f1a40ea9ff67a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  question: {fileID: 1740645371}
+  ans:
+  - {fileID: 43546861}
+  - {fileID: 1346115331}
+  - {fileID: 1214676012}
+  pannel: {fileID: 1558523746}
+  quizMenu: {fileID: 1411730041}
+  scenne: 0
+  problem: 0
+  correctIndex: 0
 --- !u!1 &1215761434
 GameObject:
   m_ObjectHideFlags: 0
@@ -1511,7 +1608,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.9450981, g: 0.5882353, b: 0.32941177, a: 0}
+  m_BackGroundColor: {r: 0.21176472, g: 0.21176472, b: 0.21176472, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -1722,12 +1819,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 137.35
+  m_fontSize: 97.3
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 7.3
-  m_fontSizeMax: 143.6
+  m_fontSizeMax: 97.3
   m_fontStyle: 1
   m_HorizontalAlignment: 8
   m_VerticalAlignment: 512
@@ -1880,7 +1977,7 @@ RectTransform:
   m_GameObject: {fileID: 1411730041}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 1740645370}
   - {fileID: 1062224991}
@@ -1908,12 +2005,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: cb1082a58f2a5014b83a684171d25720, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 70134c6edcbd4b847a88b7e5003dab31, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1948,7 +2045,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1558523747
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1983,7 +2080,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0.16981131, g: 0.16260234, b: 0.16260234, a: 0.6666667}
-  m_RaycastTarget: 0
+  m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2040,7 +2137,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 247, y: 650.4}
+  m_AnchoredPosition: {x: 118, y: 650.4}
   m_SizeDelta: {x: 1384.5105, y: 214.01965}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1740645371
@@ -2071,8 +2168,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4286379007
+  m_fontColor: {r: 1, g: 0.9528301, b: 0.48584908, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:

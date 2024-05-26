@@ -407,19 +407,27 @@ namespace Questions
 
         public (string, int) getQuestion(int escen, int probl)
         {
-            var r = Random.Range(0, 2);
+            var r = Random.Range(0, 3);
             return (questions[escen][probl][r], r);
         }
-        public string getBadAnswer(int escen, int probl, int ans)
+        public (string, int) getBadAnswer(int escen, int probl, int ans, int nonElegible)
         {
-            var r = Random.Range(0, 2);
-            var c = (ans * 3) + r;
-            return badAnswers[escen][probl][c];
+            int r;
+            int c;
+            
+            do
+            {
+                r = Random.Range(0, 3);
+                c = (ans * 3) + r;
+            } 
+            while (c == nonElegible);
+            
+            return (badAnswers[escen][probl][c], c);
         }
         
         public string getCorrectAnswer(int escen, int probl, int ans)
         {
-            var r = Random.Range(0, 2);
+            var r = Random.Range(0, 3);
             var c = (ans * 3) + r;
             return correctAnswers[escen][probl][c];
         }

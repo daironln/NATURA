@@ -7,6 +7,9 @@ TagManager:
   - Problem
   - Basura
   - Fabrica
+  - 1
+  - 2
+  - 3
   layers:
   - Default
   - TransparentFX
