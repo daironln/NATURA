@@ -1,6 +1,5 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace MainMenu
 {
@@ -9,6 +8,11 @@ namespace MainMenu
         public void QuitGame()
         {
             Application.Quit();
+        }
+
+        public void NewGame(int idx)
+        {
+            SceneManager.LoadScene(idx);
         }
     }
 }
