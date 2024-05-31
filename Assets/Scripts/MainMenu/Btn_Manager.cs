@@ -12,7 +12,7 @@ namespace MainMenu
 
         public void NewGame(int idx)
         {
-            SceneManager.LoadScene(idx);
+            SceneManager.LoadScene(Random.Range(1, 6));
         }
         
         public void Galery()

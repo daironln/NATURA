@@ -27,6 +27,10 @@ public class GameManager : PersistentSingleton<GameManager>
     {
         contCorrectAns[idx]++;
     }
+    public void setContCorrectAnsto0(int idx)
+    {
+        contCorrectAns[idx]=0;
+    }
 
     public string getActualProblem()
     {

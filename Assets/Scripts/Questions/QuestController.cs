@@ -26,6 +26,7 @@ namespace Questions
         private void Start()
         {
             originalAnsObjPos = ansObj.transform.position;
+            GameManager.Instance.setContCorrectAnsto0(SceneManager.GetActiveScene().buildIndex - 1);
         }
         
         private void IncorrectAns(int index)
