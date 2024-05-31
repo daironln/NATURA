@@ -89,7 +89,7 @@ namespace Questions
 
                     "Los árboles",
                     "Los edificios",   //1era Pregunta
-                    "Los animales?",
+                    "Los animales",
                     
                     "Mejora la visión",
                     "Aumenta la altura",   //2da Pregunta
