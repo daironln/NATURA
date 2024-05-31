@@ -13,7 +13,7 @@ public class GaleryController : MonoBehaviour
     {
         for (int i = 0; i < 5; i++)
         {
-            if (GameManager.Instance.getContCorrectAns(i) >= 2)
+            if (GameManager.Instance.getContCorrectAnsGal(i) >= 2)
             {
                 galImagesLocks[i].sprite = galImagesUnlocks[i];
             }

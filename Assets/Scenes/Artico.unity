@@ -1788,7 +1788,7 @@ GameObject:
   - component: {fileID: 1959606534}
   m_Layer: 0
   m_Name: Click
-  m_TagString: Basura
+  m_TagString: Fabrica
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

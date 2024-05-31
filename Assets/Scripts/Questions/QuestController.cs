@@ -67,7 +67,7 @@ namespace Questions
             {
                 allRestable.GetComponent<Image>().sprite = repair[2];
                 Invoke("LoadOtherScene", 3.9f);
-                
+                GameManager.Instance.setCorrectAnsGal(SceneManager.GetActiveScene().buildIndex - 1);
             }
 
         }

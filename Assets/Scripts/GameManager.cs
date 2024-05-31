@@ -6,11 +6,13 @@ using UnityEngine;
 public class GameManager : PersistentSingleton<GameManager>
 {
     [SerializeField] private int[] contCorrectAns;
+    [SerializeField] private int[] contCorrectAnsGal;
     private string actualProblem;
 
     private void Start()
     {
         contCorrectAns = new []{0,0,0,0,0,0,0};
+        contCorrectAnsGal = new []{0,0,0,0,0,0,0};
     }
 
     protected override void Awake()
@@ -21,6 +23,15 @@ public class GameManager : PersistentSingleton<GameManager>
     public int getContCorrectAns(int scen)
     {
         return contCorrectAns[scen];
+    }
+    public int getContCorrectAnsGal(int scen)
+    {
+        return contCorrectAnsGal[scen];
+    }
+
+    public void setCorrectAnsGal(int idx)
+    {
+        contCorrectAnsGal[idx] = 5;
     }
 
     public void sumContCorrectAns(int idx)
