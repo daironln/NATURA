@@ -417,7 +417,7 @@ GameObject:
   - component: {fileID: 219054644}
   m_Layer: 0
   m_Name: Basura
-  m_TagString: Basura
+  m_TagString: Fabrica
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2051,7 +2051,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -140.7002, y: 137.40039}
+  m_AnchoredPosition: {x: -140.7002, y: 115}
   m_SizeDelta: {x: 281.96692, y: 274.40283}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &278727587281066562

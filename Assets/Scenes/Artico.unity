@@ -268,7 +268,7 @@ GameObject:
   - component: {fileID: 132859219}
   m_Layer: 0
   m_Name: Derretido
-  m_TagString: Basura
+  m_TagString: Fabrica
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -363,10 +363,10 @@ RectTransform:
   m_Father: {fileID: 535063837}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 274, y: -474}
-  m_SizeDelta: {x: -1410.8721, y: -2512.885}
+  m_SizeDelta: {x: 467.12793, y: 827.115}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &219054644
 MonoBehaviour:
@@ -1901,7 +1901,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -140.7002, y: 137.40039}
+  m_AnchoredPosition: {x: -139, y: 121}
   m_SizeDelta: {x: 281.96692, y: 274.40283}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &278727587281066562
