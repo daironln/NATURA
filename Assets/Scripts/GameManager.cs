@@ -1,18 +1,40 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameManager : MonoBehaviour
+public class GameManager : PersistentSingleton<GameManager>
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] private int[] contCorrectAns;
+    private string actualProblem;
+
+    private void Start()
     {
-        
+        contCorrectAns = new []{0,0,0,0,0,0,0};
     }
 
-    // Update is called once per frame
-    void Update()
+    protected override void Awake()
     {
-        
+        base.Awake();
+    }
+
+    public int getContCorrectAns(int scen)
+    {
+        return contCorrectAns[scen];
+    }
+
+    public void sumContCorrectAns(int idx)
+    {
+        contCorrectAns[idx]++;
+    }
+
+    public string getActualProblem()
+    {
+        return actualProblem;
+    }
+    
+    public void setActualProblem(string val)
+    {
+        actualProblem = val;
     }
 }

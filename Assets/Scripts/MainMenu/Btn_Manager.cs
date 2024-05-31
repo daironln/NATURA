@@ -14,6 +14,11 @@ namespace MainMenu
         {
             SceneManager.LoadScene(idx);
         }
+        
+        public void Galery()
+        {
+            SceneManager.LoadScene(6);
+        }
     }
 }
     

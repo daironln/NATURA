@@ -61,6 +61,18 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  ansObj: {fileID: 0}
+  correctImage: {fileID: 21300000, guid: c03519bad76cf7842a26b84e8632263f, type: 3}
+  badImage: {fileID: 21300000, guid: 70134c6edcbd4b847a88b7e5003dab31, type: 3}
+  ani: {fileID: 0}
+  ansText: {fileID: 0}
+  click: {fileID: 0}
+  repair:
+  - {fileID: 21300000, guid: ab4e78b2a5b10904a94a1f7ac586b2aa, type: 3}
+  - {fileID: 21300000, guid: ebf5bef2d81d75f4d98f13a410bc051a, type: 3}
+  - {fileID: 21300000, guid: f90da06eecfc8cd49a8e4f999bf5dd44, type: 3}
+  nonRepair: {fileID: 0}
+  allRestable: {fileID: 0}
 --- !u!114 &1287050248390973836
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -80,5 +92,4 @@ MonoBehaviour:
   - {fileID: 0}
   pannel: {fileID: 0}
   quizMenu: {fileID: 0}
-  correctIndex: 0
   ani: {fileID: 0}

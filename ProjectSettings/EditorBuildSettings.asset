@@ -11,4 +11,19 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Ciudad.unity
     guid: e3ef33c60af4ae64193d616f72d596f1
+  - enabled: 1
+    path: Assets/Scenes/Playa.unity
+    guid: 7531a7625a09364458ee3bc2acddbe82
+  - enabled: 1
+    path: Assets/Scenes/Artico.unity
+    guid: e91c8fe0c7a0cad4f894be142bbf5e58
+  - enabled: 1
+    path: Assets/Scenes/Bozque.unity
+    guid: 99e99947ffb23cf4e92b5b64e63187df
+  - enabled: 1
+    path: Assets/Scenes/Desierto.unity
+    guid: 5e0ccfd1efd99bf41aa1398d918ae2c7
+  - enabled: 1
+    path: Assets/Scenes/Galeria.unity
+    guid: ee0d961205c94754e81407b17ee11a28
   m_configObjects: {}

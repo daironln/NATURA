@@ -11,7 +11,7 @@ namespace Scenaries
         [SerializeField] private GameObject pannel;
         [SerializeField] private GameObject quizMenu;
         
-        [HideInInspector] public int correctIndex;
+        private int correctIndex;
 
         [SerializeField] private Animations.Animations ani; 
 
@@ -47,12 +47,35 @@ namespace Scenaries
                 while (r == correctIndex);
                 
                 ans[r].SetText(badTuple.Item1);
-                Debug.Log((3-r)-correctIndex);
-                Debug.Log(r);
-                Debug.Log("Correct "+correctIndex);
                 ans[(3-r)-correctIndex].SetText(QuestSystem.Instance.getBadAnswer(scene, problem, questTuple.Item2, badTuple.Item2).Item1);
 
             }
+        }
+
+        public void ExitQuiz()
+        {
+            ani.ScaleUIto0(quizMenu);
+            Invoke("DeactivatePanel", 0.67f);
+        }
+
+        public void DeactivatePanel()
+        {
+            pannel.SetActive(false);
+        }
+
+        public GameObject getQuizMemu()
+        {
+            return quizMenu;
+        }
+
+        public int getCorrectIndex()
+        {
+            return correctIndex;
+        }
+
+        public bool isPanelActive()
+        {
+            return pannel.activeInHierarchy;
         }
     }
 }
