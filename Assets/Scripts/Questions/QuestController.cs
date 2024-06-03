@@ -52,7 +52,7 @@ namespace Questions
             ani.MoveUI(ansObj, new Vector3(0f, ansObj.transform.position.y, 0f));
 
             ansText.GetComponent<RectTransform>().transform.localScale = new Vector3(1.3f, 1.3f, 1.3f);
-            ansText.SetText("ENHORABUENA!! \nRESPUESTA CORRECTA");
+            ansText.SetText("ENHORABUENA!! \nRESPUESTA CORRECTA\nENCUENTRA EL OTRO PROBLEMA");
 
             GameObject obj = GameObject.FindWithTag(GameManager.Instance.getActualProblem());
             obj.SetActive(false);

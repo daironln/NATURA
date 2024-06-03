@@ -12,12 +12,17 @@ namespace MainMenu
 
         public void NewGame(int idx)
         {
-            SceneManager.LoadScene(Random.Range(1, 6));
+            SceneManager.LoadScene(idx);
         }
         
         public void Galery()
         {
             SceneManager.LoadScene(6);
+        }
+
+        public void Credits()
+        {
+            
         }
     }
 }
