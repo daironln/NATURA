@@ -9,6 +9,11 @@
   <img src="Assets/NATURA ICON FONDO.jpg" alt="Mi imagen" width="15%" height="15%">
 </div>
 
+<div align="center">
+  <img src="ciudad bien.png" alt="Mi imagen" width="15%" height="15%">
+  <img src="playa mal.png" alt="Mi imagen" width="15%" height="15%">
+</div>
+
 ### Requisites
 - Unity ver. 2019.4.34f1 o superior.
 
