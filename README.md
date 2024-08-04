@@ -12,6 +12,9 @@
 <div align="center">
   <img src="ciudad bien.png" alt="Mi imagen" width="15%" height="15%">
   <img src="playa mal.png" alt="Mi imagen" width="15%" height="15%">
+  <img src="artico bien.png" alt="Mi imagen" width="15%" height="15%">
+  <img src="desierto al 50.png" alt="Mi imagen" width="15%" height="15%">
+  <img src="bosque mal.png" alt="Mi imagen" width="15%" height="15%">
 </div>
 
 ### Requisites
