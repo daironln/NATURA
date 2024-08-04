@@ -3,7 +3,7 @@
   <img src="Pancarta.jpg" alt="Mi imagen" width="30%" height="30%">
 </div>
 
-# NATURA es una aplicación de Quiz sobre la protección del medio ambiente creada con el motor de videojuegos Unity Engine.
+### NATURA es una aplicación de Quiz sobre la protección del medio ambiente creada con el motor de videojuegos Unity Engine.
 
   <div align="center">
   <img src="Assets/NATURA ICON FONDO.jpg" alt="Mi imagen" width="15%" height="15%">
